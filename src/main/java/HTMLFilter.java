@@ -1,14 +1,12 @@
+import java.util.Arrays;
+
 public class HTMLFilter implements Filter {
-    public void doFilter(Request request, Response response, FilterChain chain) {
+    public void doFilter(String[] args,String[] res) {
 
-        //String arr[] = response.getResponseStr();
-        String arr[] = request.getRequestStr();
-        System.out.println("============");
-        System.out.println(arr.length);
-        arr[0] = "000";
+        //System.out.println("html");
 
-        //request.setRequestStr(arr);
-        chain.doFilter(request, response, chain);
-        response.setResponseStr(arr);
+        res[0] = "111";
+
+        //return upReturn;
     }
 }
