@@ -2,13 +2,13 @@
  * Created by liuxiaojun on 16/1/22.
  */
 public class Request {
-    private String requestStr;
+    private String[] requestStr;
 
-    public String getRequestStr() {
+    public String[] getRequestStr() {
         return requestStr;
     }
 
-    public void setRequestStr(String requestStr) {
+    public void setRequestStr(String[] requestStr) {
         this.requestStr = requestStr;
     }
 }
